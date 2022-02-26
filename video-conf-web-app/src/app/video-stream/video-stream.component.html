@@ -1,0 +1,17 @@
+<mat-grid-list cols="2" rowHeight="3:2" class="video-call-container">
+    <mat-grid-tile class="video-desc">
+        <video #localVideo [autoplay]="true" [muted]="true">
+        </video>
+    </mat-grid-tile>
+    <mat-grid-tile class="video-desc">
+        <video #receivedVideo [autoplay]="true">                
+        </video>
+    </mat-grid-tile>
+</mat-grid-list>
+
+<div class="button-tray">
+    <app-my-fab-button (click)="startLocalVideo()" name="Start My Video" icon="videocam" ></app-my-fab-button>
+    <app-my-fab-button (click)="pauseLocalVideo()" name="Stop My Video" icon="videocam_off" ></app-my-fab-button>
+    <app-my-fab-button (click)="call()" name="Call" icon="call"></app-my-fab-button>
+    <app-my-fab-button (click)="hangUp()" name="Hangup" icon="call_end"></app-my-fab-button>
+</div>

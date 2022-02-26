@@ -1,0 +1,19 @@
+video{
+    width:calc(100% - 4rem);
+    height: fit-content;
+    background: grey;
+    border-radius: 20px;
+}
+
+.video-desc{
+    border-radius: 20px;
+    margin: auto;
+}
+
+.button-tray{
+    display: flex;
+    margin: auto;
+    justify-items:center;
+    align-items: center;
+    justify-content: center;
+}
